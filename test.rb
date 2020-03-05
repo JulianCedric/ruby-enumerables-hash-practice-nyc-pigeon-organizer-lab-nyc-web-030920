@@ -17,38 +17,13 @@ pigeon_data = {
   }
 }
 
-pigeon_data_alternate = {
-  :color => {
-    :brown => ["Luca"],
-    :black => ["Lola"],
-  },
-  :gender => {
-    :male => ["Luca"],
-    :female => ["Lola"]
-  },
-  :lives => {
-    "Central Park" => ["Lola"],
-    "Library" => ["Luca"]
-  }
-}
+p pigeon_data.first 
 
-def nyc_pigeon_organizer(hash)
+def nyc_pigeon_organizer(data)
   
-  # names = ["Theo", "Peter Jr.", "Lucky", "Ms .K", "Queenie", "Andrew", "Alex"]
-  
-  # attributes = { :color => [], :gender => [], :lives => [] }
+end
 
-  # hash = { names[0] => attributes } 
-  
-  # hash_index = 0 
-  # while hash_index < names.length do 
-  #   hash[names[hash_index]] = attributes
-  #   hash_index += 1 
-  # end 
-  
-### 
 
-hash_one = 
 
 {
   "Theo" => {
@@ -66,7 +41,7 @@ hash_one =
     :gender => ["male"],
     :lives => ["Central Park"]
   },
-  "Ms. K" => {
+  "Ms .K" => {
     :color => ["grey", "white"],
     :gender => ["female"],
     :lives => ["Central Park"]
@@ -87,23 +62,3 @@ hash_one =
     :lives => ["Central Park"]
   }
 }
-
-###
-attributes1 = { :color => ["brown"], :gender => ["male"], :lives => ["Library"] }
-
-attributes2 = { :color => ["black"], :gender => ["female"], :lives => ["Central Park"] }
-attributes3 = { :color => ["white", "brown"], :gender => ["male"],  :lives => ["Central Park"]
-  }
-
-hash_alternate = 
-
-{
-  "Luca" => attributes1,
-  "Lola" => attributes2,
-  "Alex" => attributes3
-}
-###
-
-hash_one  
-  
-end
