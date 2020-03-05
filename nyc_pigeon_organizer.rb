@@ -1,3 +1,5 @@
+ require "pry"
+ 
  def flatten_a_o_a(aoa)
   result = []
   i = 0
@@ -52,6 +54,7 @@ def nyc_pigeon_organizer(pigeon_hashes)
   pigeons_by_name = [] 
   pigeon_hashes.each do |attributes, attributes_details_hash|
     attributes_details_hash.each do |attributes_details_hash, names_array|
+      binding.pry 
       pigeons_by_name << names_array
     end 
   end
