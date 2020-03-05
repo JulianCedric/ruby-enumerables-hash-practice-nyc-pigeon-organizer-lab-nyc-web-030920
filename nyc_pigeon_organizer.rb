@@ -1,5 +1,4 @@
- 
-def flatten_a_o_a(aoa)
+ def flatten_a_o_a(aoa)
   result = []
   i = 0
   while i < aoa.length do
