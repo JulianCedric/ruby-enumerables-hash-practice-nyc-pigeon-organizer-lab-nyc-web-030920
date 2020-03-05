@@ -63,29 +63,31 @@ def nyc_pigeon_organizer(pigeon_hashes)
         end 
         
         
-      binding.pry 
-      pigeons_by_name[name][attributes] << names_array
+      # binding.pry 
+      pigeons_by_name[name][attributes] << new_value.to_s 
     end 
     end 
   end
-
-  names = (flatten_a_o_a(pigeons_by_name)).uniq 
-
-  names
-
-  attributes_hash = { :color => [], :gender => [], :lives => [] }
-
-  hash = { names[0] => attributes_hash }  
-  
-  hash
-  hash_index = 1
-  while hash_index < names.length do 
-    hash[names[hash_index]] = attributes_hash 
-    hash_index += 1
-  end  
-  
-  hash 
-
+pigeons_by_name
 end 
 
-p nyc_pigeon_organizer(pigeon_data1)
+#   names = (flatten_a_o_a(pigeons_by_name)).uniq 
+
+#   names
+
+#   attributes_hash = { :color => [], :gender => [], :lives => [] }
+
+#   hash = { names[0] => attributes_hash }  
+  
+#   hash
+#   hash_index = 1
+#   while hash_index < names.length do 
+#     hash[names[hash_index]] = attributes_hash 
+#     hash_index += 1
+#   end  
+  
+#   hash 
+
+# end 
+
+# p nyc_pigeon_organizer(pigeon_data1)
