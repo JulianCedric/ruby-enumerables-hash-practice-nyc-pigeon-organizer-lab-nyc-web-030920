@@ -61,8 +61,6 @@ def nyc_pigeon_organizer(pigeon_hashes)
         if !pigeons_by_name[name][attributes]
           pigeons_by_name[name][attributes] = [] 
         end 
-        
-        
       # binding.pry 
       pigeons_by_name[name][attributes] << new_value.to_s 
     end 
