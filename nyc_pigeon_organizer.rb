@@ -59,10 +59,12 @@ def nyc_pigeon_organizer(pigeon_hashes)
           pigeons_by_name[name] = {}
         end           
         if !pigeons_by_name[name][attributes]
-          pigeons_by_name[name][attributes] = {} 
+          pigeons_by_name[name][attributes] = [] 
         end 
+        
+        
       binding.pry 
-      pigeons_by_name << names_array
+      pigeons_by_name[name][attributes] << names_array
     end 
     end 
   end
