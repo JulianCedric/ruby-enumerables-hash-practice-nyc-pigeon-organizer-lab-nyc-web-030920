@@ -55,6 +55,11 @@ def nyc_pigeon_organizer(pigeon_hashes)
   pigeon_hashes.each do |attributes, attributes_details_hash|
     attributes_details_hash.each do |new_value, names_array| 
       names_array.each do |name| 
+        if !pigeons_by_name[name]
+          pigeons_by_name[name] = {}
+        end           
+        if !pigeons_by_name[name]
+          
       binding.pry 
       pigeons_by_name << names_array
     end 
