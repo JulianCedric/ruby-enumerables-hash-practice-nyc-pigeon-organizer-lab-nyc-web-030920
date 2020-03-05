@@ -51,7 +51,7 @@ end
 }
   
 def nyc_pigeon_organizer(pigeon_hashes)
-  pigeons_by_name = [] 
+  pigeons_by_name = {} 
   pigeon_hashes.each do |attributes, attributes_details_hash|
     attributes_details_hash.each do |new_value, names_array| 
       names_array.each do |name| 
